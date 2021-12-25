@@ -213,10 +213,14 @@
                       <div class="form-group">
                         <label for="alasanverif">Alasan Verifikasi</label>
                         <select name="alasanVerifikasi" id="alasanverif" required>
-                            <option value="1">Bukti Pembayaran Review Akhir</option>
-                            <option value="2">Bukti Transfer</option>
-                            <option value="3">Form Persetujuan Pembimbing</option>
-                            <option value="4">Jurnal Link Terbit</option>
+                          <option value="Bukti Pembayaran Review Akhir">Bukti Pembayaran Review Akhir</option>
+                          <option value="Bukti Transfer">Bukti Transfer</option>
+                          <option value="Form Persetujuan Pembimbing">Form Persetujuan Pembimbing</option>
+                          <option value="Jurnal Link Terbit">Jurnal Link Terbit</option>
+                          <option value="Cek Turnitin">Cek Turnitin</option>
+                          <option value="Screenshot Aplikasi">Screenshot Aplikasi</option>
+                          <option value="Transkrip">Transkrip</option>
+                          <option value="Form Persetujuan Publish">Form Persetujuan Publish</option>
                         </select>
                       </div>
                       <div class="form-group">
@@ -263,6 +267,10 @@
                             <option value="Bukti Transfer">Bukti Transfer</option>
                             <option value="Form Persetujuan Pembimbing">Form Persetujuan Pembimbing</option>
                             <option value="Jurnal Link Terbit">Jurnal Link Terbit</option>
+                            <option value="Cek Turnitin">Cek Turnitin</option>
+                            <option value="Screenshot Aplikasi">Screenshot Aplikasi</option>
+                            <option value="Transkrip">Transkrip</option>
+                            <option value="Form Persetujuan Publish">Form Persetujuan Publish</option>
                         </select>
                       </div>
                       <div class="form-group">

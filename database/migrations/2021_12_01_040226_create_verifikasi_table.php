@@ -22,7 +22,11 @@ class CreateVerifikasiTable extends Migration
                 'Bukti Pembayaran Review Akhir',
                 'Bukti Transfer',
                 'Form Persetujuan Pembimbing',
-                'Jurnal Link Terbit']);
+                'Jurnal Link Terbit',
+                'Cek Turnitin',
+                'Screenshot Aplikasi',
+                'Transkrip',
+                'Form Persetujuan Publish']);
             $table->string('uploadFile', 255);
             $table->timestamps();
         });
