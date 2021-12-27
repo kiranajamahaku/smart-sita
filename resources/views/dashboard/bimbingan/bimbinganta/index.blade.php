@@ -231,6 +231,10 @@
                             <option value="Pertemuan 2">Pertemuan 2</option>
                             <option value="Pertemuan 3">Pertemuan 3</option>
                             <option value="Pertemuan 4">Pertemuan 4</option>
+                            <option value="Pertemuan 5">Pertemuan 5</option>
+                            <option value="Pertemuan 6">Pertemuan 6</option>
+                            <option value="Pertemuan 7">Pertemuan 7</option>
+                            <option value="Pertemuan 8">Pertemuan 8</option>
                         </select>
                       </div>	
                       <div class="form-group">
@@ -283,6 +287,10 @@
                             <option value="Pertemuan 2">Pertemuan 2</option>
                             <option value="Pertemuan 3">Pertemuan 3</option>
                             <option value="Pertemuan 4">Pertemuan 4</option>
+                            <option value="Pertemuan 5">Pertemuan 5</option>
+                            <option value="Pertemuan 6">Pertemuan 6</option>
+                            <option value="Pertemuan 7">Pertemuan 7</option>
+                            <option value="Pertemuan 8">Pertemuan 8</option>
                         </select>
                       </div>
                       <div class="form-group">

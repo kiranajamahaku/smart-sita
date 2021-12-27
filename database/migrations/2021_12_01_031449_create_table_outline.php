@@ -31,12 +31,12 @@ class CreateTableOutline extends Migration
                 'Ira Diana Sholihati, S.Si., MMSI.',
                 'Agus Iskandar, S.Kom., M.Kom',
                 'Ratih Titi Komala Sari, ST., MM., MMSI',
-                'Benrahman, S.Kom., MMSI',
                 'Novi Dian Nathasia, S.Kom., MMSI',
                 'Ir. Endah Tri Esthi Handayani, MMSI',
                 'Aris Gunaryati, S.SI., MMSI',
                 'Winarsih, S.SI., MMSI',
-                'Albaar Rubhasy, S.Si, MTI']);
+                'Albaar Rubhasy, S.Si, MTI',
+                'Benrahman, S.Kom., MMSI']);
             $table->enum('pilihanTeam1', [
                 'Prof. Dr. Iskandar Fitri, ST., MT',
                 'Dr. Ucuk Darusalam, ST., MT',
@@ -48,12 +48,12 @@ class CreateTableOutline extends Migration
                 'Ira Diana Sholihati, S.Si., MMSI.',
                 'Agus Iskandar, S.Kom., M.Kom',
                 'Ratih Titi Komala Sari, ST., MM., MMSI',
-                'Benrahman, S.Kom., MMSI',
                 'Novi Dian Nathasia, S.Kom., MMSI',
                 'Ir. Endah Tri Esthi Handayani, MMSI',
                 'Aris Gunaryati, S.SI., MMSI',
                 'Winarsih, S.SI., MMSI',
-                'Albaar Rubhasy, S.Si, MTI']);
+                'Albaar Rubhasy, S.Si, MTI',
+                'Benrahman, S.Kom., MMSI']);
             $table->timestamps();
         });
     }

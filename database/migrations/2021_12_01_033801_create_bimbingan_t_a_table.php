@@ -25,7 +25,11 @@ class CreateBimbinganTATable extends Migration
                 'Pertemuan 1',
                 'Pertemuan 2',
                 'Pertemuan 3',
-                'Pertemuan 4']);
+                'Pertemuan 4',
+                'Pertemuan 5',
+                'Pertemuan 6',
+                'Pertemuan 7',
+                'Pertemuan 8']);
             $table->string('uploadFile', 255);
             $table->timestamps();
         });

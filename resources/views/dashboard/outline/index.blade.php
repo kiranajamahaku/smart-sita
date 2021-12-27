@@ -235,12 +235,12 @@
                             <option value="Ira Diana Sholihati, S.Si., MMSI.">Ira Diana Sholihati, S.Si., MMSI.</option>
                             <option value="Agus Iskandar, S.Kom., M.Kom">Agus Iskandar, S.Kom., M.Kom</option>
                             <option value="Ratih Titi Komala Sari, ST., MM., MMSI">Ratih Titi Komala Sari, ST., MM., MMSI</option>
-                            <option value="Benrahman, S.Kom., MMS">Benrahman, S.Kom., MMS</option>
                             <option value="Novi Dian Nathasia, S.Kom., MMSI">Novi Dian Nathasia, S.Kom., MMSI</option>
                             <option value="Ir. Endah Tri Esthi Handayani, MMSI">Ir. Endah Tri Esthi Handayani, MMSI</option>
                             <option value="Aris Gunaryati, S.SI., MMSI">Aris Gunaryati, S.SI., MMSI</option>
                             <option value="Winarsih, S.SI., MMSI">Winarsih, S.SI., MMSI</option>
                             <option value="Albaar Rubhasy, S.Si, MTI">Albaar Rubhasy, S.Si, MTI</option>
+                            <option value="Benrahman, S.Kom., MMSI">Benrahman, S.Kom., MMSI</option>
                         </select>
                       </div>
                       <div class="form-group">
@@ -260,12 +260,12 @@
                             <option value="Ira Diana Sholihati, S.Si., MMSI.">Ira Diana Sholihati, S.Si., MMSI.</option>
                             <option value="Agus Iskandar, S.Kom., M.Kom">Agus Iskandar, S.Kom., M.Kom</option>
                             <option value="Ratih Titi Komala Sari, ST., MM., MMSI">Ratih Titi Komala Sari, ST., MM., MMSI</option>
-                            <option value="Benrahman, S.Kom., MMS">Benrahman, S.Kom., MMS</option>
                             <option value="Novi Dian Nathasia, S.Kom., MMSI">Novi Dian Nathasia, S.Kom., MMSI</option>
                             <option value="Ir. Endah Tri Esthi Handayani, MMSI">Ir. Endah Tri Esthi Handayani, MMSI</option>
                             <option value="Aris Gunaryati, S.SI., MMSI">Aris Gunaryati, S.SI., MMSI</option>
                             <option value="Winarsih, S.SI., MMSI">Winarsih, S.SI., MMSI</option>
                             <option value="Albaar Rubhasy, S.Si, MTI">Albaar Rubhasy, S.Si, MTI</option>
+                            <option value="Benrahman, S.Kom., MMSI">Benrahman, S.Kom., MMSI</option>
                         </select>
                       </div>			
                     </div>
@@ -320,12 +320,12 @@
                             <option value="Ira Diana Sholihati, S.Si., MMSI.">Ira Diana Sholihati, S.Si., MMSI.</option>
                             <option value="Agus Iskandar, S.Kom., M.Kom">Agus Iskandar, S.Kom., M.Kom</option>
                             <option value="Ratih Titi Komala Sari, ST., MM., MMSI">Ratih Titi Komala Sari, ST., MM., MMSI</option>
-                            <option value="Benrahman, S.Kom., MMS">Benrahman, S.Kom., MMS</option>
                             <option value="Novi Dian Nathasia, S.Kom., MMSI">Novi Dian Nathasia, S.Kom., MMSI</option>
                             <option value="Ir. Endah Tri Esthi Handayani, MMSI">Ir. Endah Tri Esthi Handayani, MMSI</option>
                             <option value="Aris Gunaryati, S.SI., MMSI">Aris Gunaryati, S.SI., MMSI</option>
                             <option value="Winarsih, S.SI., MMSI">Winarsih, S.SI., MMSI</option>
                             <option value="Albaar Rubhasy, S.Si, MTI">Albaar Rubhasy, S.Si, MTI</option>
+                            <option value="Benrahman, S.Kom., MMSI">Benrahman, S.Kom., MMSI</option>
                         </select>
                       </div>
                       <div class="form-group">
@@ -345,12 +345,12 @@
                             <option value="Ira Diana Sholihati, S.Si., MMSI.">Ira Diana Sholihati, S.Si., MMSI.</option>
                             <option value="Agus Iskandar, S.Kom., M.Kom">Agus Iskandar, S.Kom., M.Kom</option>
                             <option value="Ratih Titi Komala Sari, ST., MM., MMSI">Ratih Titi Komala Sari, ST., MM., MMSI</option>
-                            <option value="Benrahman, S.Kom., MMS">Benrahman, S.Kom., MMS</option>
                             <option value="Novi Dian Nathasia, S.Kom., MMSI">Novi Dian Nathasia, S.Kom., MMSI</option>
                             <option value="Ir. Endah Tri Esthi Handayani, MMSI">Ir. Endah Tri Esthi Handayani, MMSI</option>
                             <option value="Aris Gunaryati, S.SI., MMSI">Aris Gunaryati, S.SI., MMSI</option>
                             <option value="Winarsih, S.SI., MMSI">Winarsih, S.SI., MMSI</option>
                             <option value="Albaar Rubhasy, S.Si, MTI">Albaar Rubhasy, S.Si, MTI</option>
+                            <option value="Benrahman, S.Kom., MMSI">Benrahman, S.Kom., MMSI</option>
                         </select>
                       </div>	
                     </div>
