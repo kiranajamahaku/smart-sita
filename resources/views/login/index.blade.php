@@ -10,8 +10,11 @@
 
   <meta content="" name="keywords">
 
-    {{-- Favicon --}}
-    <link rel="icon" href="{{ asset('/img/favicon.jpg') }}">
+  {{-- AOS --}}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  {{-- Favicon --}}
+  <link rel="icon" href="{{ asset('/img/favicon.jpg') }}">
 
   <!-- GOOLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -40,50 +43,51 @@
 <body>
 
 <!-- ======= HEADER ======= -->
-  <header id="header" class="header fixed-top">
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="/" class="logo d-flex align-items-center">
-        <span>Smart-SITA</span>
-      </a>
-
-    <!-- Navbar -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#">Petunjuk</a></li>
-          <li><a class="nav-link scrollto" href="#">FAQ</a></li>
-          <li class="nav-item dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/login">Mahasiswa</a></li>
-              <li class="dropdown-item"><a href="#">Dosen</a></li>
-              <li class="dropdown-item"><a href="#">TU (Admin)</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown"><a><button class="btn success">Registrasi<i class="bi bi-chevron-down"></i></button></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/register">Mahasiswa</a></li>
-              <li class="dropdown-item"><a href="#">Dosen</a></li>
-              <li class="dropdown-item"><a href="#">TU (Admin)</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    <!-- Navbar END -->
+    <div class="logo">
+      <h1><a href="/"><span>Smart-SITA</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
 
-  </header>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="#">Step Smart-SITA</a></li>
+        <li><a class="nav-link scrollto" href="#">Petunjuk</a></li>
+        <li><a class="nav-link scrollto" href="#">Informasi</a></li>
+        <li><a class="nav-link scrollto" href="#">FAQ</a></li>
+        <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/login">Mahasiswa</a></li>
+            <li><a href="#">Dosen</a></li>
+            <li><a href="#">TU (Admin)</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><button class="btn-registrasi">Registrasi <i class="bi bi-chevron-down"></i></button></a>
+          <ul>
+            <li><a href="/register">Mahasiswa</a></li>
+            <li><a href="#">Dosen</a></li>
+            <li><a href="#">TU (Admin)</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 <!-- ======= HEADER END ======= -->
 
 {{-- Login --}}
 <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-up">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card border-0 shadow rounded-20 my-5">
-          <div class="card-body p-4 p-sm-5 mt-10">
-            <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+        <div class="card-login border-0 shadow rounded-20 my-5">
+          <div class="card-login-body">
+            <h5 class="card-login-title">Sign In</h5>
             <form action="/login" method="post">
               @csrf
               <div class="form-floating mb-3">
@@ -102,8 +106,7 @@
                 </label>
               </div>
               <div class="d-grid">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
-                  in</button>
+                <button class="btn btn-login" type="submit">Sign In</button>
               </div>
             </form>
           </div>
@@ -114,17 +117,80 @@
 {{-- Login End --}}
 
 
-<!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>FTKI UNAS</span></strong>. All Rights Reserved
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Bootslander</h3>
+              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
         </div>
       </div>
     </div>
-  </footer>
-<!-- ======= Footer END ======= -->
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Bootslander</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -142,6 +208,12 @@
 
   <!-- JavaScript File -->
   <script src="{{ asset('/js/main.js') }}"></script>
+
+  {{-- AOS --}}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

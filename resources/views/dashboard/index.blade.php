@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="dashboard/outline">
+            <a class="nav-link" href="/dashboard/outline">
               <i class="ri-book-2-line menu-icon"></i>
               <span class="menu-title">Outline</span>
             </a>

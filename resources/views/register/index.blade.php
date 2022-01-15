@@ -10,6 +10,9 @@
 
   <meta content="" name="keywords">
 
+  {{-- AOS --}}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   {{-- Favicon --}}
   <link rel="icon" href="{{ asset('/img/favicon.jpg') }}">
 
@@ -40,50 +43,51 @@
 <body>
 
 <!-- ======= HEADER ======= -->
-  <header id="header" class="header fixed-top">
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="/" class="logo d-flex align-items-center">
-        <span>Smart-SITA</span>
-      </a>
-
-    <!-- Navbar -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#">Petunjuk</a></li>
-          <li><a class="nav-link scrollto" href="#">FAQ</a></li>
-          <li class="nav-item dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/login">Mahasiswa</a></li>
-              <li class="dropdown-item"><a href="#">Dosen</a></li>
-              <li class="dropdown-item"><a href="#">TU (Admin)</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown"><a><button class="btn success">Registrasi<i class="bi bi-chevron-down"></i></button></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/register">Mahasiswa</a></li>
-              <li class="dropdown-item"><a href="#">Dosen</a></li>
-              <li class="dropdown-item"><a href="#">TU (Admin)</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    <!-- Navbar END -->
+    <div class="logo">
+      <h1><a href="/"><span>Smart-SITA</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
 
-  </header>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="#">Step Smart-SITA</a></li>
+        <li><a class="nav-link scrollto" href="#">Petunjuk</a></li>
+        <li><a class="nav-link scrollto" href="#">Informasi</a></li>
+        <li><a class="nav-link scrollto" href="#">FAQ</a></li>
+        <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/login">Mahasiswa</a></li>
+            <li><a href="#">Dosen</a></li>
+            <li><a href="#">TU (Admin)</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><button class="btn-registrasi">Registrasi <i class="bi bi-chevron-down"></i></button></a>
+          <ul>
+            <li><a href="/register">Mahasiswa</a></li>
+            <li><a href="#">Dosen</a></li>
+            <li><a href="#">TU (Admin)</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 <!-- ======= HEADER END ======= -->
 
 {{-- Sign Up --}}
 <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-up">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card border-0 shadow rounded-20 my-5">
-          <div class="card-body p-4 p-sm-5 mt-10">
-            <h5 class="card-title text-center mb-3 fw-light fs-5">Register</h5>
+        <div class="card-login border-0 shadow rounded-20 my-5">
+          <div class="card-login-body">
+            <h5 class="card-login-title">Register</h5>
             <form action="/register" method="post">
               @csrf
 
@@ -141,7 +145,7 @@
               </div>
 
               <div class="d-grid">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Registrasi</button>
+                <button class="btn btn-login" type="submit">Registrasi</button>
               </div>
             </form>
           </div>
@@ -180,6 +184,12 @@
 
   <!-- JavaScript File -->
   <script src="{{ asset('/js/main.js') }}"></script>
+
+  {{-- AOS --}}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
