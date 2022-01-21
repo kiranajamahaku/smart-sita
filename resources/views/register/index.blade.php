@@ -156,17 +156,32 @@
 {{-- Sign Up End --}}
 
 
-<!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>FTKI UNAS</span></strong>. All Rights Reserved
+        <div class="row">
+
+          <div class="col-lg-12 col-md-2">
+            <div class="footer-info">
+              <h3>Smart-SITA of FTKI UNAS</h3>
+              Universitas Nasional, No. 61, Pejaten, Jl. Sawo Manila, RT.14/RW.3 <br>
+              Ps. Minggu, Kec. Ps. Minggu, Kota Jakarta Selatan, <br> 
+              Daerah Khusus Ibukota Jakarta 12520<br><br>
+                <strong>WhatsApp:</strong> +62 838 0586 7766 <br>
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="copyright"> &copy; Copyright <strong><span>FTKI UNAS</span></strong>. All Rights Reserved</div>
+    </div>
   </footer>
-<!-- ======= Footer END ======= -->
+  <!-- End Footer -->
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

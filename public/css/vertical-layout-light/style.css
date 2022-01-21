@@ -13495,7 +13495,7 @@ dl li {
 }
 
 .card__link:hover {
-  color: var(--third-color) !important;
+  color: rgb(241, 211, 226) !important;
 }
 
 .card__icon {
@@ -13517,7 +13517,7 @@ dl li {
 /* CARD BACKGROUNDS */
 
 .card-1 {
-  background: radial-gradient(#8cddb0, #7ad188);
+  background: radial-gradient(#ad9cfd, #2f20bd);
 }
 
 .card-2 {
@@ -13525,15 +13525,15 @@ dl li {
 }
 
 .card-3 {
-  background: radial-gradient(#76b2fe, #b69efe);
+  background: radial-gradient(#fe76e1, #ec6f95);
 }
 
 .card-4 {
-  background: radial-gradient(#60efbc, #58d5c9);
+  background: radial-gradient(#60efbc, #409eb6);
 }
 
 .card-5 {
-  background: radial-gradient(#a9bbf0, #6edbd0);
+  background: radial-gradient(#7585b4, #523d9c);
 }
 
 .card-6 {
