@@ -114,6 +114,18 @@
               <span class="menu-title">Persetujuan Pembimbing</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/upload">
+              <i class="ri-upload-line menu-icon"></i>
+              <span class="menu-title">Berkas Sidang Akhir</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/uploadwisuda">
+              <i class="ri-folder-upload-line menu-icon"></i>
+              <span class="menu-title">Berkas Wisuda</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- SIDEBAR END -->

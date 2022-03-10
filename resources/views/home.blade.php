@@ -392,8 +392,8 @@
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3 id="publisher">Mencari Publisher Akreditasi SINTA</h3>
             <ul>
-              <li><i class='bx bx-check-circle'></i>Untuk publisher terakreditasi SINTA dapat dicari di website https://www.sinta.ristekbrin.go.id/journals.</li>
-              <li><i class='bx bx-check-circle'></i>Setelah itu pilih akreditasi SINTA (S1, S2, S3 dsb) untuk memuat publisher dengan akreditasi yang diinginkan.</li>
+              <li><i class='bx bx-check-circle'></i>Untuk publisher terakreditasi SINTA dapat dicari di website <a href="https://www.sinta.ristekbrin.go.id/journals"> https://www.sinta.ristekbrin.go.id/journals.</a></li>
+              <li><i class='bx bx-check-circle'></i>Setelah itu pilih akreditasi SINTA (<a href="https://www.sinta.ristekbrin.go.id/journals?q=&search=1&sinta=1" target="__blank">SINTA 1</a>, <a href="https://www.sinta.ristekbrin.go.id/journals?q=&search=1&sinta=2" target="__blank">SINTA 2</a>, <a href="https://www.sinta.ristekbrin.go.id/journals?q=&search=1&sinta=3" target="__blank">SINTA 3</a>, <a href="https://www.sinta.ristekbrin.go.id/journals?q=&search=1&sinta=4" target="__blank">SINTA 4</a>, <a href="https://www.sinta.ristekbrin.go.id/journals?q=&search=1&sinta=5" target="__blank">SINTA 5</a>) untuk memuat publisher dengan akreditasi yang diinginkan.</li>
               <li><i class='bx bx-check-circle'></i>Lalu dapat mengetikan bidang keilmuan jurnal referensi di kolom search</li>
               <li><i class='bx bx-check-circle'></i>Selanjutnya web tersebut akan menampilkan publisher sesuai dengan yang dicari.</li>
             </ul>

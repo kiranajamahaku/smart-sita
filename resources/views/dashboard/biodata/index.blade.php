@@ -116,6 +116,18 @@
               <span class="menu-title">Persetujuan Pembimbing</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/upload">
+              <i class="ri-upload-line menu-icon"></i>
+              <span class="menu-title">Berkas Sidang Akhir</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/uploadwisuda">
+              <i class="ri-folder-upload-line menu-icon"></i>
+              <span class="menu-title">Berkas Wisuda</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- SIDEBAR END -->
@@ -227,6 +239,22 @@
                         </div>
                       </div>
                       <hr>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Upload CV</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          @if (empty(auth()->user()->cv))
+                              -
+                          @else
+                            {{ auth()->user()->cv }} -
+                            <a href="{{ route('biodata.download.cv') }}">
+                              Download File
+                            </a>
+                          @endif
+                        </div>
+                      </div>
+                      <hr>
                       <div class="col-sm-12">
                         <a href="#" class="button-18" data-toggle="modal" data-target="#editBiodataModal">Edit</a>
                       </div>
@@ -235,7 +263,7 @@
                     <div id="editBiodataModal" class="modal fade">
                       <div class="modal-dialog">
                         <div class="modal-content">
-                          <form action="/dashboard/biodata" method="POST">
+                          <form action="/dashboard/biodata" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="modal-header">						
                               <h4 class="modal-title">Edit Data</h4>
@@ -287,6 +315,10 @@
                               <div class="form-group">
                                 <label>Phone</label>
                                 <input type="text" class="form-control" name="phone" value="{{ auth()->user()->phone }}" required>
+                              </div>						
+                              <div class="form-group">
+                                <label>Upload CV</label>
+                                <input type="file" class="form-control" name="file_cv" required>
                               </div>						
                             </div>
                             <div class="modal-footer">

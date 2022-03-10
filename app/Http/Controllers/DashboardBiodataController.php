@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class DashboardBiodataController extends Controller
@@ -81,9 +82,19 @@ class DashboardBiodataController extends Controller
             'password' => 'required',
             'phone' => 'required'
         ]);
+
+        if (!empty($request->file('file_cv'))) {
+            $filename = strtotime('now') . '_' . str_replace(' ', '_', $request->file('file_cv')->getClientOriginalName());
+            $request->file('file_cv')->storeAs('public/data_file/', $filename);
+
+            if (!empty(Auth::user()->cv))
+                Storage::delete('public/data_file/' . Auth::user()->cv);
+
+            $request->merge(['cv' => $filename]);
+        }
         
         User::where('id', auth()->user()->id)
-            ->update($validatedData);
+            ->update($request->except(['_token', 'file_cv']));
                 
         return redirect('/dashboard/biodata');    
     }
@@ -116,5 +127,23 @@ class DashboardBiodataController extends Controller
             ->update($validatedData);
                 
         return redirect('/dashboard/biodata'); 
+    }
+
+    public function downloadCv()
+    {
+        $path = Storage::disk('local')->path('public/data_file/' . Auth::user()->cv);
+
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . Auth::user()->cv);
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: private');
+        header('Pragma: private');
+        header('Content-Length: ' . filesize($path));
+        ob_clean();
+        flush();
+        readfile($path);
+        exit;
     }
 }

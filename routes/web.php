@@ -13,7 +13,8 @@ use App\Http\Controllers\DashboardDataBimbinganController;
 use App\Http\Controllers\DashboardBimbinganTAController;
 use App\Http\Controllers\DashboardVerifikasiController;
 use App\Http\Controllers\DashboardPersetujuanDospemController;
-
+use App\Http\Controllers\DashboardUploadController;
+use App\Http\Controllers\DashboardUploadWisudaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,7 +42,8 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
 
-Route::resource('/dashboard/biodata', DashboardBiodataController::class);
+Route::resource('/dashboard/biodata', DashboardBiodataController::class)->except(['show']);
+Route::get('/dashboard/biodata/download-cv', [ DashboardBiodataController::class, 'downloadCv'])->name('biodata.download.cv');
 Route::post('/dashboard/biodata/', [ DashboardBiodataController::class, 'update']);
 Route::post('/dashboard/biodata/photo', [ DashboardBiodataController::class, 'photo']);
 
@@ -75,3 +77,12 @@ Route::resource('/dashboard/persetujuandospem', DashboardPersetujuanDospemContro
 Route::post('/dashboard/persetujuandospem', [DashboardPersetujuanDospemController::Class, 'store']);
 Route::post('/dashboard/persetujuandospem/{persetujuandospem}', [DashboardPersetujuanDospemController::class, 'update']);
 Route::get('/dashboard/persetujuandospem/{persetujuandospem}', [DashboardPersetujuanDospemController ::class, 'destroy']);
+
+Route::resource('/dashboard/upload', DashboardUploadController::class);
+Route::get('/dashboard/upload/download/{upload}/{file}', [DashboardUploadController::class, 'download'])->name('upload.download');
+Route::get('/dashboard/upload/{upload}', [DashboardUploadController ::class, 'destroy']);
+
+Route::resource('/dashboard/uploadwisuda', DashboardUploadWisudaController::class);
+Route::post('/dashboard/uploadwisuda', [DashboardUploadWisudaController::Class, 'store']);
+Route::post('/dashboard/uploadwisuda/{uploadwisuda}', [DashboardUploadWisudaController::class, 'update']);
+Route::get('/dashboard/uploadwisuda/{uploadwisuda}', [DashboardUploadWisudaController ::class, 'destroy']);
